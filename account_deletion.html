@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion | 账号注销 - Carva</title>
+    <style>
+        :root { --primary-color: #000000; --bg-color: #FFFFFF; --text-color: #333333; --border-color: #EAEAEA; --danger-color: #D32F2F; }
+        @media (prefers-color-scheme: dark) { 
+            :root { --primary-color: #FFFFFF; --bg-color: #000000; --text-color: #CCCCCC; --border-color: #333333; --danger-color: #EF5350; } 
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px 0; }
+        .header-bar { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { font-size: 24px; margin: 0; color: var(--primary-color); font-weight: 600; }
+        h2 { font-size: 18px; color: var(--primary-color); margin-top: 35px; font-weight: 600; }
+        p, li { font-size: 15px; margin-bottom: 12px; }
+        strong { color: var(--primary-color); }
+        .warning-box { border-left: 4px solid var(--danger-color); background-color: rgba(211, 47, 47, 0.05); padding: 15px; margin: 20px 0; border-radius: 0 4px 4px 0; }
+        .toggle-btn { background-color: transparent; border: 1px solid var(--border-color); color: var(--text-color); padding: 6px 14px; border-radius: 4px; cursor: pointer; font-size: 13px; transition: all 0.2s; }
+        .toggle-btn:hover { background-color: var(--primary-color); color: var(--bg-color); border-color: var(--primary-color); }
+        .btn-action { display: inline-block; background-color: var(--primary-color); color: var(--bg-color); text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: 500; margin-top: 10px; transition: opacity 0.2s; }
+        .btn-action:hover { opacity: 0.8; }
+        .lang-en, .lang-zh { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-bar">
+            <h1 class="lang-en">Account Deletion Request</h1>
+            <h1 class="lang-zh">Carva 账号与数据注销</h1>
+            <button class="toggle-btn" onclick="toggleLanguage()">EN / 中文</button>
+        </div>
+
+        <!-- English Content -->
+        <div class="lang-en">
+            <p>At Carva, we respect your privacy and data ownership. If you wish to permanently delete your account and all associated expense data, you can do so through the methods below in compliance with Google Play's Data Safety guidelines.</p>
+            
+            <div class="warning-box">
+                <p style="margin: 0;"><strong>⚠️ Important Notice Regarding Subscriptions:</strong><br>
+                Deleting your account will <strong>NOT</strong> automatically cancel your active Carva Pro subscription. You must manually cancel your auto-renewal in the Google Play Store to avoid future charges.</p>
+            </div>
+
+            <h2>Method 1: Delete via the Carva App (Fastest)</h2>
+            <p>If you still have the app installed, you can delete your account immediately:</p>
+            <ol>
+                <li>Open the <strong>Carva</strong> app on your device.</li>
+                <li>Navigate to <strong>Settings</strong> (Profile).</li>
+                <li>Tap on <strong>Account Management</strong>.</li>
+                <li>Select <strong>Delete Account</strong> and confirm your choice.</li>
+            </ol>
+            <p><em>Your Firebase Auth account and all cloud-synced expense data will be wiped instantly and cannot be recovered.</em></p>
+
+            <h2>Method 2: Request Deletion via Web/Email</h2>
+            <p>If you have already uninstalled the app and wish to delete your account, please send an email to our support team from your <strong>registered email address</strong>. We will process your request within 7-14 business days.</p>
+            <ul>
+                <li><strong>Email to:</strong> support@carva-app.com</li>
+                <li><strong>Subject:</strong> Account Deletion Request</li>
+                <li><strong>Content:</strong> Please include your registered email address or user ID.</li>
+            </ul>
+            <a href="mailto:support@carva-app.com?subject=Account%20Deletion%20Request" class="btn-action">Email Support to Delete Account</a>
+
+            <h2>What Data Gets Deleted?</h2>
+            <p>Upon successful deletion, the following data will be permanently removed from our servers (Google Firebase / Cloud):</p>
+            <ul>
+                <li>Your account credentials and authentication data.</li>
+                <li>All your EV expense records, charging logs, and generated reports.</li>
+                <li>Your custom avatars and preferences.</li>
+            </ul>
+            <p><em>Note: We may retain certain transaction records (e.g., billing history for Carva Pro) strictly for legal, tax, or accounting purposes as required by law.</em></p>
+        </div>
+
+        <!-- 中文内容 -->
+        <div class="lang-zh">
+            <p>在 Carva，我们尊重您的隐私与数据所有权。如果您希望永久注销您的账号并删除所有相关的记账数据，您可以通过以下符合 Google Play 数据安全政策的途径进行操作。</p>
+            
+            <div class="warning-box">
+                <p style="margin: 0;"><strong>⚠️ 关于连续包月订阅的重要提示：</strong><br>
+                注销 Carva 账号 <strong>不会</strong> 自动取消您的 Carva Pro 自动续费订阅。您必须自行前往 Google Play 商店取消订阅，以避免未来产生不必要的扣费。</p>
+            </div>
+
+            <h2>方式一：在 App 内部直接注销（最快捷）</h2>
+            <p>如果您尚未卸载应用，可以直接在应用内自行注销，数据将立即清除：</p>
+            <ol>
+                <li>打开您设备上的 <strong>Carva</strong> 应用。</li>
+                <li>进入 <strong>设置 (Settings)</strong> 页面。</li>
+                <li>点击 <strong>账号管理 (Account Management)</strong>。</li>
+                <li>选择 <strong>注销账号 (Delete Account)</strong> 并确认。</li>
+            </ol>
+            <p><em>您的 Firebase 认证账号及所有云端同步的记账数据将被立刻销毁，且无法恢复。</em></p>
+
+            <h2>方式二：通过邮件申请注销 (如果您已卸载应用)</h2>
+            <p>如果您已经卸载了应用，请使用您的<strong>注册邮箱</strong>发送邮件至我们的支持团队申请注销。我们将在核实身份后的 7-14 个工作日内处理您的请求。</p>
+            <ul>
+                <li><strong>收件人：</strong> support@carva-app.com</li>
+                <li><strong>邮件标题：</strong> 账号注销请求 (Account Deletion Request)</li>
+                <li><strong>邮件内容：</strong> 请在正文中写明您注册时使用的邮箱账号。</li>
+            </ul>
+            <a href="mailto:support@carva-app.com?subject=Account%20Deletion%20Request" class="btn-action">发送注销请求邮件</a>
+
+            <h2>哪些数据会被删除？</h2>
+            <p>注销完成后，以下数据将从我们的服务器 (Google Firebase) 中被永久彻底抹除：</p>
+            <ul>
+                <li>您的账号登录凭证与身份验证信息。</li>
+                <li>您的所有电车记账记录、充电日志以及生成的年度报告。</li>
+                <li>您自定义的头像与应用偏好设置。</li>
+            </ul>
+            <p><em>注：根据相关法律法规要求，我们可能会将某些脱敏的交易记录（如 Carva Pro 的支付流水）保留一段特定的时间，仅用于税务或财务审计目的。</em></p>
+        </div>
+    </div>
+
+    <script>
+        let currentLang = 'en';
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+            document.querySelectorAll('.lang-zh').forEach(el => el.style.display = lang === 'zh' ? 'block' : 'none');
+        }
+        function toggleLanguage() { setLanguage(currentLang === 'en' ? 'zh' : 'en'); }
+        document.addEventListener("DOMContentLoaded", () => {
+            const userLang = navigator.language || navigator.userLanguage;
+            setLanguage(userLang.toLowerCase().startsWith('zh') ? 'zh' : 'en');
+        });
+    </script>
+</body>
+</html>
