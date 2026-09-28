@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Terms | 订阅协议 - Carva Pro</title>
+    <style>
+        :root { --primary-color: #000000; --bg-color: #FFFFFF; --text-color: #333333; --border-color: #EAEAEA; }
+        @media (prefers-color-scheme: dark) { 
+            :root { --primary-color: #FFFFFF; --bg-color: #000000; --text-color: #CCCCCC; --border-color: #333333; } 
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px 0; }
+        .header-bar { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { font-size: 24px; margin: 0; color: var(--primary-color); font-weight: 600; }
+        h2 { font-size: 18px; color: var(--primary-color); margin-top: 35px; font-weight: 600; }
+        p, li { font-size: 15px; margin-bottom: 12px; }
+        strong { color: var(--primary-color); }
+        .toggle-btn { background-color: transparent; border: 1px solid var(--border-color); color: var(--text-color); padding: 6px 14px; border-radius: 4px; cursor: pointer; font-size: 13px; transition: all 0.2s; }
+        .toggle-btn:hover { background-color: var(--primary-color); color: var(--bg-color); border-color: var(--primary-color); }
+        .lang-en, .lang-zh { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-bar">
+            <h1 class="lang-en">Carva Pro Subscription Terms</h1>
+            <h1 class="lang-zh">Carva Pro 自动续费与订阅规则</h1>
+            <button class="toggle-btn" onclick="toggleLanguage()">EN / 中文</button>
+        </div>
+
+        <!-- English Content -->
+        <div class="lang-en">
+            <p>By subscribing to Carva Pro, you agree to the following terms regarding automated billing, cancellations, and refunds via Google Play.</p>
+            
+            <h2>1. Billing Authorization</h2>
+            <p>This service is an auto-renewing subscription processed exclusively through the <strong>Google Play Billing</strong> system. By subscribing, you authorize Google to charge your default payment method on file.</p>
+
+            <h2>2. Auto-Renewal & Price Changes</h2>
+            <p>Your subscription will automatically renew within <strong>24 hours</strong> prior to the end of the current billing cycle. Carva reserves the right to adjust subscription pricing. If prices change, you will be notified in advance by Google Play, and you must accept the new price to continue your subscription; otherwise, it will automatically cancel.</p>
+
+            <h2>3. Cancellation Policy</h2>
+            <p>You can cancel auto-renewal at any time. To avoid being charged for the next cycle, you must cancel at least 24 hours before the current period ends. Uninstalling the app or deleting your account will <strong>not</strong> cancel your subscription.</p>
+            <p><strong>How to Cancel:</strong> Open the <code>Google Play Store</code> app > Tap Profile > <code>Payments & subscriptions</code> > <code>Subscriptions</code> > Select <code>Carva</code> > Cancel.</p>
+
+            <h2>4. No Pro-Rated Refunds</h2>
+            <p>When you cancel a subscription, you will continue to have access to Carva Pro features until the end of your current billing cycle. <strong>We do not provide pro-rated refunds</strong> for the remaining days of a canceled cycle, unless strictly required by applicable law or Google Play policy.</p>
+
+            <h2>5. Account Suspension</h2>
+            <p>If your account is suspended or terminated due to a violation of our Terms of Service (e.g., hacking, reverse engineering), you will lose access to Carva Pro immediately, and you will not be entitled to any refund for the active subscription period.</p>
+        </div>
+
+        <!-- 中文内容 -->
+        <div class="lang-zh">
+            <p>当您选择订阅 Carva Pro 时，即表示您同意以下基于 Google Play 的自动扣费、取消及退款规则。</p>
+            
+            <h2>1. 结算授权</h2>
+            <p>本服务为基于 <strong>Google Play 结算系统</strong> 的自动续费订阅。点击购买即表示您授权 Google Play 按照您绑定的支付方式进行扣款。</p>
+
+            <h2>2. 自动续费与价格变动</h2>
+            <p>您的 Carva Pro 订阅将在当前计费周期结束前的 <strong>24 小时内</strong> 自动续订。Carva 保留调整订阅价格的权利。如果价格发生变动，Google Play 会提前通知您。您需同意新价格才能继续续费；若您不同意，订阅将在当前周期结束后自动取消。</p>
+
+            <h2>3. 取消订阅规则 (重要)</h2>
+            <p>您随时可以取消自动续订。为避免下个周期的扣费，您必须在当前计费周期结束前至少 24 小时进行取消。<strong>请注意：仅仅卸载 App 或注销 Carva 账号，并不会自动取消您的连续包月/包年订阅。</strong></p>
+            <p><strong>操作路径：</strong> 打开 Android 设备的 <code>Google Play 商店</code> > 点击头像 > <code>支付与订阅</code> > <code>订阅</code> > 找到 <code>Carva</code> > 点击取消。</p>
+
+            <h2>4. 不支持按比例退款</h2>
+            <p>当您取消订阅后，您的 Carva Pro 权益将保留至当前计费周期结束。除非当地法律或 Google Play 官方政策强制要求，否则我们<strong>不提供当前周期剩余天数的按比例退款或折算退款</strong>。</p>
+
+            <h2>5. 违规与封号处理</h2>
+            <p>如果您的账号因严重违反《Carva 用户协议》（如使用破解手段、反向工程等违规行为）而被封禁，您将立即失去 Carva Pro 访问权限，且我们不会对您已支付的订阅费用进行任何形式的退款或补偿。</p>
+        </div>
+    </div>
+
+    <script>
+        let currentLang = 'en';
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+            document.querySelectorAll('.lang-zh').forEach(el => el.style.display = lang === 'zh' ? 'block' : 'none');
+        }
+        function toggleLanguage() { setLanguage(currentLang === 'en' ? 'zh' : 'en'); }
+        document.addEventListener("DOMContentLoaded", () => {
+            const userLang = navigator.language || navigator.userLanguage;
+            setLanguage(userLang.toLowerCase().startsWith('zh') ? 'zh' : 'en');
+        });
+    </script>
+</body>
+</html>

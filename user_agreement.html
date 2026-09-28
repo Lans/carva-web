@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | 用户协议 - Carva</title>
+    <style>
+        :root { --primary-color: #000000; --bg-color: #FFFFFF; --text-color: #333333; --border-color: #EAEAEA; }
+        @media (prefers-color-scheme: dark) { 
+            :root { --primary-color: #FFFFFF; --bg-color: #000000; --text-color: #CCCCCC; --border-color: #333333; } 
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px 0; }
+        .header-bar { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { font-size: 24px; margin: 0; color: var(--primary-color); font-weight: 600; }
+        h2 { font-size: 18px; color: var(--primary-color); margin-top: 35px; font-weight: 600; }
+        p, li { font-size: 15px; margin-bottom: 12px; }
+        strong { color: var(--primary-color); }
+        .toggle-btn { background-color: transparent; border: 1px solid var(--border-color); color: var(--text-color); padding: 6px 14px; border-radius: 4px; cursor: pointer; font-size: 13px; transition: all 0.2s; }
+        .toggle-btn:hover { background-color: var(--primary-color); color: var(--bg-color); border-color: var(--primary-color); }
+        .lang-en, .lang-zh { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-bar">
+            <h1 class="lang-en">Terms of Service</h1>
+            <h1 class="lang-zh">Carva 用户协议</h1>
+            <button class="toggle-btn" onclick="toggleLanguage()">EN / 中文</button>
+        </div>
+
+        <!-- English Content -->
+        <div class="lang-en">
+            <p><strong>Last Updated:</strong> September 2026</p>
+            <p>By downloading, installing, or using the Carva application, you agree to be bound by these Terms of Service. If you do not agree, please do not use the application.</p>
+            
+            <h2>1. Service Description & Account Security</h2>
+            <p>Carva provides expense tracking, data analysis, and report generation tools for EV owners. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</p>
+
+            <h2>2. Prohibited Conduct</h2>
+            <p>You agree NOT to: (a) reverse engineer, decompile, or disassemble the app; (b) use automated scripts, spiders, or bots to scrape data; (c) attempt to bypass any security or subscription mechanisms; (d) use the app for any illegal activities or to upload malicious code.</p>
+
+            <h2>3. Intellectual Property</h2>
+            <p>All software code, UI/UX designs, animations, generated report templates, and branding within Carva are the exclusive intellectual property of the developers. You are granted a limited, non-exclusive, non-transferable license to use the app for personal, non-commercial purposes.</p>
+
+            <h2>4. "As-Is" Disclaimer (Important)</h2>
+            <p>The Carva app and all related services are provided on an <strong>"AS-IS" and "AS-AVAILABLE" basis</strong>. We expressly disclaim all warranties of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not guarantee that the service will be uninterrupted, error-free, or completely secure.</p>
+
+            <h2>5. Limitation of Liability</h2>
+            <p><strong>Data Loss & Accuracy:</strong> You are responsible for backing up your data. We are not liable for any data loss due to device failure, app uninstallation, or cloud sync issues. Furthermore, OCR (receipt scanning) and AI-generated analysis are for reference only. We are not responsible for any financial losses or incorrect decisions made based on app data.</p>
+            <p>To the maximum extent permitted by law, Carva and its developers shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of the app. In no event shall our total liability to you exceed the amount you paid to us (if any) in the past 12 months.</p>
+
+            <h2>6. Termination</h2>
+            <p>We reserve the right to suspend or terminate your access to Carva at any time, without prior notice, if you violate these Terms or engage in conduct that damages our business or other users.</p>
+        </div>
+
+        <!-- 中文内容 -->
+        <div class="lang-zh">
+            <p><strong>最新更新：</strong> 2026年9月</p>
+            <p>当您下载、安装或使用 Carva 时，即表示您已阅读、理解并同意接受本协议的所有条款。如果您不同意，请勿使用本应用。</p>
+            
+            <h2>1. 服务内容与账号安全</h2>
+            <p>Carva 致力于为您提供电车记账、能耗统计与年度报告生成服务。您需妥善保管您的账号及登录凭证，并对您账号下发生的所有行为承担全部责任。</p>
+
+            <h2>2. 禁止行为 (用户规范)</h2>
+            <p>您同意在使用本服务时，**绝不进行以下行为**：(a) 对本应用进行反向工程、反编译或试图提取源代码；(b) 使用自动化脚本、爬虫抓取应用数据；(c) 试图绕过、破解应用的安全机制或付费订阅系统；(d) 利用本应用从事任何违法违规活动或传播恶意软件。</p>
+
+            <h2>3. 知识产权</h2>
+            <p>Carva 软件内的所有代码、UI/UX 设计、动效、生成的专属海报模板及品牌标识等，其知识产权均归开发者独占所有。我们仅授予您一项个人的、不可转让的及非排他性的许可，供您出于非商业目的使用本应用。</p>
+
+            <h2>4. “按原样 (As-Is)”提供与免责声明 (核心)</h2>
+            <p>Carva 及其所有功能均按**“原样 (AS-IS)”与“现有 (AS-AVAILABLE)”**状态提供。我们明确拒绝提供任何明示或暗示的担保，包括但不限于适销性、特定用途适用性及不侵权的担保。我们不保证服务一定能满足您的要求，也不保证服务绝不中断、绝对安全或毫无错误。</p>
+
+            <h2>5. 责任限制</h2>
+            <p><strong>数据准确性与防丢失：</strong> 账单识别 (OCR) 及 AI 分析结果仅供参考，请人工复核财务数据。对于因计算误差导致的任何经济损失，我们概不负责。尽管我们提供数据存储功能，但您应自行备份重要数据。因设备损坏、卸载应用、系统崩溃或网络原因导致的数据丢失，开发者不承担赔偿责任。</p>
+            <p>在法律允许的最大范围内，Carva 及其开发者对您因使用或无法使用本应用而产生的任何间接、偶然、特殊、惩罚性或后果性的损害（包括利润损失、数据丢失）不承担责任。在任何情况下，我们的全部赔偿责任不超过您在过去 12 个月内向我们支付的总金额。</p>
+
+            <h2>6. 违约与服务终止</h2>
+            <p>如果您违反了本协议的任何条款，或从事了损害 Carva 或其他用户利益的行为，我们有权在不事先通知的情况下，随时单方面中止或永久终止为您提供服务，且不承担任何退款或赔偿责任。</p>
+        </div>
+    </div>
+
+    <script>
+        let currentLang = 'en';
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+            document.querySelectorAll('.lang-zh').forEach(el => el.style.display = lang === 'zh' ? 'block' : 'none');
+        }
+        function toggleLanguage() { setLanguage(currentLang === 'en' ? 'zh' : 'en'); }
+        document.addEventListener("DOMContentLoaded", () => {
+            const userLang = navigator.language || navigator.userLanguage;
+            setLanguage(userLang.toLowerCase().startsWith('zh') ? 'zh' : 'en');
+        });
+    </script>
+</body>
+</html>
